@@ -2,8 +2,8 @@ function mostrarMensagem(msg) { // defino a função do display  que é mostrar 
   console.log(msg); // o console.log é para a saida da mensagem no display
 }
 
-function esperar(ms) {// defino a função do time da mensagem 
-  return new Promise(resolve => setTimeout(resolve, ms));
+function esperar(milesegundos) {// definindo uma função do time da mensagem em milesegundos
+ 
 }
 
 async function principal() {
