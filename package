@@ -1,0 +1,8 @@
+async function principal ()
+{
+ mostrarMensagem("sensor 1");
+ await esperar (2000);
+ mostrarMensagem("sensor 2")
+
+
+}
