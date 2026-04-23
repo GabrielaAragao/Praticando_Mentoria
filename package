@@ -1,8 +1,26 @@
-async function principal ()
-{
- mostrarMensagem("sensor 1");
- await esperar (2000);
- mostrarMensagem("sensor 2")
-
-
+function mostrarMensagem(msg) { // defino a função do display  que é mostrar a mensagem dos sensores 
+  console.log(msg); // o console.log é para a saida da mensagem no display
 }
+
+function esperar(ms) {// defino a função do time da mensagem 
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function principal() {
+  
+  mostrarMensagem("sensor 1");
+  await esperar(1000); //coloco em milesegundos 
+  
+  mostrarMensagem("sensor 2");
+  await esperar(2000);
+  
+  mostrarMensagem ("sensor 3");
+  await esperar(2000);
+  
+  mostrarMensagem("sensor 4");
+  await esperar(1000);
+  
+  
+}
+// chamando a função
+principal();
